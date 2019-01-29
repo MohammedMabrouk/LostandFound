@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- General -->
+    <dimen name="md_keylines">16dp</dimen>
+    <dimen name="md_margin_small">8dp</dimen>
+    <dimen name="md_padding8">8dp</dimen>
+    <dimen name="md_padding4">4dp</dimen>
+    <item name="line_separator_height_small" type="dimen" format="float">1.5dp</item>
+
+    <!-- Login Activity -->
+    <dimen name="activity_login_container_width">280dp</dimen>
+    <dimen name="activity_login_container_margin_bottom">20dp</dimen>
+    <dimen name="activity_login_container_margin_top">28dp</dimen>
+
+    <dimen name="activity_login_icon_width">140dp</dimen>
+    <dimen name="activity_login_icon_height">140dp</dimen>
+    <dimen name="activity_login_icon_margin">16dp</dimen>
+
+    <!-- Login Fragment -->
+    <dimen name="fragment_login_layout_width">280dp</dimen>
+    <dimen name="fragment_login_margin_top">28dp</dimen>
+    <dimen name="fragment_login_margin_bottom">20dp</dimen>
+
+    <dimen name="fragment_login_margin_medium">8dp</dimen>
+    <dimen name="fragment_login_margin_small">6dp</dimen>
+    <dimen name="fragment_login_margin_very_small">2dp</dimen>
+
+    <dimen name="fragment_login_btn_login_text_size">18sp</dimen>
+
+    <dimen name="fragment_login_social_btn_height">35dp</dimen>
+    <dimen name="fragment_login_padding_small">4dp</dimen>
+
+    <dimen name="fragment_login_social_btn_no_margin">0dp</dimen>
+    <dimen name="fragment_login_margin4">4dp</dimen>
+
+    <!-- Register Fragment -->
+
+    <dimen name="fragment_register_layout_width">280dp</dimen>
+    <dimen name="fragment_register_margin_top">28dp</dimen>
+    <dimen name="fragment_register_margin_bottom">20dp</dimen>
+
+    <dimen name="fragment_register_margin_large">16dp</dimen>
+    <dimen name="fragment_register_margin_medium">8dp</dimen>
+    <dimen name="fragment_register_margin_small">6dp</dimen>
+    <dimen name="fragment_register_margin_very_small">2dp</dimen>
+
+    <dimen name="fragment_register_btn_register_text_size">18sp</dimen>
+
+
+    <!-- Main Activity -->
+    <!-- Navigation Drawer -->
+    <dimen name="nav_header_height">160dp</dimen>
+    <dimen name="nav_header_padding">16dp</dimen>
+    <dimen name="nav_header_img_height">72dp</dimen>
+    <dimen name="nav_header_img_width">72dp</dimen>
+    <dimen name="nav_header_img_border">1dp</dimen>
+    <dimen name="nav_header_element_vertical_margin">8dp</dimen>
+
+    <dimen name="profile_name_text_size">16sp</dimen>
+
+
+    <!-- FAB -->
+    <dimen name="fab_margin">16dp</dimen>
+
+
+    <!-- Lost / Found Item Layout -->
+    <dimen name="item_card_height">136dp</dimen>
+    <dimen name="item_card_margin">6dp</dimen>
+
+
+    <!-- Item Details Activity -->
+    <dimen name="detailsActivity_itemImage_width">200dp</dimen>
+    <dimen name="detailsActivity_itemImage_height">200dp</dimen>
+
+    <!-- transition -->
+    <integer name="anim_duration_very_long">1500</integer>
+    <integer name="anim_duration_long">500</integer>
+    <integer name="anim_duration_medium">300</integer>
+
+
+
+
+
+</resources>

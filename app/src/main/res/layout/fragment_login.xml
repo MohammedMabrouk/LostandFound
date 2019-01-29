@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        tools:context=".ui.loginRegister.LoginFragment"
+        android:layout_width="@dimen/fragment_login_layout_width"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/fragment_login_margin_top"
+        android:layout_marginBottom="@dimen/fragment_login_margin_bottom"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal">
+
+    <!-- Email Label -->
+    <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/fragment_login_margin_medium"
+            android:layout_marginBottom="@dimen/fragment_login_margin_medium">
+
+        <EditText android:id="@+id/input_email"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:inputType="textEmailAddress"
+                  android:hint="@string/fragment_login_email_hint"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <!-- Password Label -->
+    <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/fragment_login_margin_medium"
+            android:layout_marginBottom="@dimen/fragment_login_margin_medium">
+
+        <EditText android:id="@+id/input_password"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:inputType="textPassword"
+                  android:hint="@string/fragment_login_password_hint"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+            android:id="@+id/login_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/fragment_login_btn_login_text"
+            android:textColor="@color/white"
+            android:textAllCaps="false"
+            android:fontFamily="sans-serif"
+            android:textSize="@dimen/fragment_login_btn_login_text_size"
+            android:layout_marginTop="@dimen/fragment_login_margin_medium"
+            android:layout_marginBottom="@dimen/fragment_login_margin_medium"
+            android:background="@drawable/login_btn_bg"/>
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="horizontal"
+                  android:gravity="center_horizontal"
+                  android:layout_margin="@dimen/fragment_login_margin_medium">
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_margin="@dimen/fragment_login_margin_very_small"
+                  android:text="@string/fragment_login_don_t_have_account_text"/>
+
+        <TextView
+                android:id="@+id/sign_up_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/fragment_login_margin_very_small"
+                android:textColor="@color/primaryDarkColor"
+                android:text="@string/fragment_login_sign_up_now_text"/>
+    </LinearLayout>
+
+    <View android:layout_width="match_parent"
+          android:layout_height="@dimen/line_separator_height_small"
+          android:background="@drawable/line_separator"/>
+
+    <TextView android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_margin="@dimen/fragment_login_margin_small"
+              android:textAlignment="center"
+              android:text="@string/fragment_login_or_sign_in_using_text"/>
+
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <Button
+                android:id="@+id/facebook_login_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/fragment_login_social_btn_height"
+                android:background="@drawable/facebook_login_btn_bg"
+                android:textColor="@color/white"
+                android:textAllCaps="false"
+                android:drawableStart="@drawable/ic_facebook_logo"
+                android:padding="@dimen/fragment_login_padding_small"
+                android:text="@string/fragment_login_facebook_btn_text"
+                android:layout_marginBottom="@dimen/fragment_login_margin_medium"
+                android:layout_marginTop="@dimen/fragment_login_margin_medium"
+                android:layout_marginStart="@dimen/fragment_login_social_btn_no_margin"
+                android:layout_marginEnd="@dimen/fragment_login_margin4"/>
+
+        <Button
+                android:id="@+id/google_login_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/fragment_login_social_btn_height"
+                android:background="@drawable/google_login_btn_bg"
+                android:textColor="@color/white"
+                android:textAllCaps="false"
+                android:drawableStart="@drawable/ic_google_logo"
+                android:padding="@dimen/fragment_login_padding_small"
+                android:text="@string/fragment_login_google_btn_text"
+                android:layout_marginBottom="@dimen/fragment_login_margin_medium"
+                android:layout_marginTop="@dimen/fragment_login_margin_medium"
+                android:layout_marginStart="@dimen/fragment_login_margin4"
+                android:layout_marginEnd="@dimen/fragment_login_margin4"/>
+
+        <Button
+                android:id="@+id/twitter_login_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/fragment_login_social_btn_height"
+                android:background="@drawable/twitter_login_btn_bg"
+                android:textColor="@color/white"
+                android:textAllCaps="false"
+                android:drawableStart="@drawable/ic_twitter_logo"
+                android:padding="@dimen/fragment_login_padding_small"
+                android:text="@string/fragment_login_twitter_btn_text"
+                android:layout_marginBottom="@dimen/fragment_login_margin_medium"
+                android:layout_marginTop="@dimen/fragment_login_margin_medium"
+                android:layout_marginStart="@dimen/fragment_login_margin4"
+                android:layout_marginEnd="@dimen/fragment_login_social_btn_no_margin"/>
+
+    </LinearLayout>
+</LinearLayout>

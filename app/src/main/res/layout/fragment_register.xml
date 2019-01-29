@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        tools:context=".ui.loginRegister.RegisterFragment"
+        android:layout_width="@dimen/fragment_register_layout_width"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/fragment_register_margin_top"
+        android:layout_marginBottom="@dimen/fragment_register_margin_bottom"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal">
+
+    <!-- Name Label -->
+    <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/fragment_register_margin_medium"
+            android:layout_marginBottom="@dimen/fragment_register_margin_medium">
+
+        <EditText android:id="@+id/input_name"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:inputType="textPersonName"
+                  android:hint="@string/fragment_register_name_hint"/>
+    </android.support.design.widget.TextInputLayout>
+
+
+    <!-- Email Label -->
+    <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/fragment_register_margin_medium"
+            android:layout_marginBottom="@dimen/fragment_register_margin_medium">
+
+        <EditText android:id="@+id/input_email"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:inputType="textEmailAddress"
+                  android:hint="@string/fragment_register_email_hint"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <!-- Password Label -->
+    <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/fragment_register_margin_medium"
+            android:layout_marginBottom="@dimen/fragment_register_margin_medium">
+
+        <EditText android:id="@+id/input_password"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:inputType="textPassword"
+                  android:hint="@string/fragment_register_password_hint"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+            android:id="@+id/register_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/fragment_register_create_account_btn_text"
+            android:textColor="@color/white"
+            android:textAllCaps="false"
+            android:fontFamily="sans-serif"
+            android:textSize="@dimen/fragment_register_btn_register_text_size"
+            android:layout_marginTop="@dimen/fragment_register_margin_medium"
+            android:layout_marginBottom="@dimen/fragment_register_margin_large"
+            android:background="@drawable/login_btn_bg"/>
+
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="horizontal"
+                  android:gravity="center_horizontal"
+                  android:layout_margin="@dimen/fragment_register_margin_medium">
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_margin="@dimen/fragment_register_margin_very_small"
+                  android:text="@string/fragment_register_already_have_an_account_text"/>
+
+        <TextView
+                android:id="@+id/login_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/fragment_register_margin_very_small"
+                android:textColor="@color/primaryDarkColor"
+                android:text="@string/fragment_register_login_now_text"/>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,151 @@
+<resources>
+    <string name="app_name">Lost &amp; Found</string>
+
+
+    <!-- Navigation -->
+    <string name="nav_home">Home</string>
+    <string name="nav_messages">Messages</string>
+    <string name="nav_notification">Notifications</string>
+    <string name="nav_my_items">My Items</string>
+    <string name="nav_profile">Profile</string>
+    <string name="nav_settings">Settings</string>
+    <string name="nav_share">Share</string>
+    <string name="nav_help_feedback">Help &amp; feedback</string>
+    <string name="item_details">Item Details</string>
+
+
+
+    <!-- Item Details Screen -->
+    <string name="item_img_transition_name">itemImage</string>
+    <string name="have_you_seen_this_item">Have you seen this item?</string>
+    <string name="call_owner">Call owner</string>
+    <string name="location_indicator">Location Indicator</string>
+    <string name="time_indicator">Time Indicator</string>
+    <string name="item_image">Item Image</string>
+    <string name="number_of_comments_title">comments (%1$s)</string>
+
+
+    <!-- Login Fragment -->
+
+    <string name="login_form_email_syntax_error">enter a valid email address</string>
+    <string name="login_form_short_password_error">at least 4 characters</string>
+
+    <string name="fragment_login_email_hint">Email</string>
+    <string name="fragment_login_password_hint">Password</string>
+    <string name="fragment_login_btn_login_text">Login</string>
+    <string name="fragment_login_don_t_have_account_text">Don\'t have an account?</string>
+    <string name="fragment_login_sign_up_now_text">Sign up Now!</string>
+    <string name="fragment_login_or_sign_in_using_text">or sign in using</string>
+    <string name="fragment_login_facebook_btn_text">Facebook</string>
+    <string name="fragment_login_google_btn_text">Google</string>
+    <string name="fragment_login_twitter_btn_text">Twitter</string>
+
+    <!-- Register Fragment -->
+
+    <string name="register_form_short_name">at least 6 characters</string>
+    <string name="register_form_email_syntax_error">enter a valid email address</string>
+    <string name="register_form_short_password_error">at least 4 characters</string>
+    <string name="fragment_register_name_hint">Name</string>
+    <string name="fragment_register_email_hint">Email</string>
+    <string name="fragment_register_password_hint">Password</string>
+    <string name="fragment_register_create_account_btn_text">Create Account</string>
+    <string name="fragment_register_already_have_an_account_text">Already have an account?</string>
+    <string name="fragment_register_login_now_text">Login Now!</string>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Placeholder Strings -->
+    <string name="temp_string_en_small_paragraph">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis felis eget libero volutpat convallis. Mauris
+        efficitur libero pretium libero cursus posuere. Suspendisse vel libero eu augue ultricies pulvinar in et ipsum.
+        Ut pretium, lorem vel consectetur placerat, nisl lorem eleifend ante, ut luctus ligula enim a nulla.
+    </string>
+    <string name="temp_string_en_1paragraph">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis felis eget libero volutpat convallis. Mauris
+        efficitur libero pretium libero cursus posuere. Suspendisse vel libero eu augue ultricies pulvinar in et ipsum.
+        Ut pretium, lorem vel consectetur placerat, nisl lorem eleifend ante, ut luctus ligula enim a nulla. Quisque
+        scelerisque nunc arcu. Cras at ante vitae leo fringilla eleifend ut sit amet sapien. Interdum et malesuada fames
+        ac ante ipsum primis in faucibus. Duis dictum purus eget lacinia imperdiet. Nullam maximus luctus lacus, at
+        malesuada est scelerisque interdum.
+    </string>
+    <string name="temp_string_en_2paragraph">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis felis eget libero volutpat convallis. Mauris
+        efficitur libero pretium libero cursus posuere. Suspendisse vel libero eu augue ultricies pulvinar in et ipsum.
+        Ut pretium, lorem vel consectetur placerat, nisl lorem eleifend ante, ut luctus ligula enim a nulla. Quisque
+        scelerisque nunc arcu. Cras at ante vitae leo fringilla eleifend ut sit amet sapien. Interdum et malesuada fames
+        ac ante ipsum primis in faucibus. Duis dictum purus eget lacinia imperdiet. Nullam maximus luctus lacus, at
+        malesuada est scelerisque interdum.
+
+        Sed blandit sollicitudin lorem sit amet condimentum. In venenatis mauris nec lacus iaculis ultrices. Aliquam
+        eget velit diam. Maecenas eu viverra est. Praesent urna leo, faucibus ut posuere congue, suscipit eget odio.
+        Quisque id augue nulla. Nam vehicula pharetra accumsan. Class aptent taciti sociosqu ad litora torquent per
+        conubia nostra, per inceptos himenaeos. Sed a sagittis orci. Maecenas placerat non dolor quis consequat. Proin
+        efficitur purus non urna placerat auctor.
+    </string>
+    <string name="temp_string_en_3paragraph">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis felis eget libero volutpat convallis. Mauris
+        efficitur libero pretium libero cursus posuere. Suspendisse vel libero eu augue ultricies pulvinar in et ipsum.
+        Ut pretium, lorem vel consectetur placerat, nisl lorem eleifend ante, ut luctus ligula enim a nulla. Quisque
+        scelerisque nunc arcu. Cras at ante vitae leo fringilla eleifend ut sit amet sapien. Interdum et malesuada fames
+        ac ante ipsum primis in faucibus. Duis dictum purus eget lacinia imperdiet. Nullam maximus luctus lacus, at
+        malesuada est scelerisque interdum.
+
+        Sed blandit sollicitudin lorem sit amet condimentum. In venenatis mauris nec lacus iaculis ultrices. Aliquam
+        eget velit diam. Maecenas eu viverra est. Praesent urna leo, faucibus ut posuere congue, suscipit eget odio.
+        Quisque id augue nulla. Nam vehicula pharetra accumsan. Class aptent taciti sociosqu ad litora torquent per
+        conubia nostra, per inceptos himenaeos. Sed a sagittis orci. Maecenas placerat non dolor quis consequat. Proin
+        efficitur purus non urna placerat auctor.
+
+        Donec mattis, odio vitae egestas sagittis, mauris lacus vestibulum diam, ac tempor diam lacus mollis erat.
+        Vestibulum scelerisque lacus nec lacus convallis efficitur. Nullam vel sapien gravida, ultrices lacus sit amet,
+        pharetra magna. Etiam tellus nibh, fermentum vitae sem vitae, condimentum commodo velit. Pellentesque auctor
+        elementum viverra. Interdum et malesuada fames ac ante ipsum primis in faucibus. Phasellus odio tellus,
+        malesuada a mauris et, lobortis cursus ex. Etiam purus nisl, auctor id pharetra nec, vestibulum non tellus.
+    </string>
+    <string name="temp_string_en_4paragraph">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis felis eget libero volutpat convallis. Mauris
+        efficitur libero pretium libero cursus posuere. Suspendisse vel libero eu augue ultricies pulvinar in et ipsum.
+        Ut pretium, lorem vel consectetur placerat, nisl lorem eleifend ante, ut luctus ligula enim a nulla. Quisque
+        scelerisque nunc arcu. Cras at ante vitae leo fringilla eleifend ut sit amet sapien. Interdum et malesuada fames
+        ac ante ipsum primis in faucibus. Duis dictum purus eget lacinia imperdiet. Nullam maximus luctus lacus, at
+        malesuada est scelerisque interdum.
+
+        Sed blandit sollicitudin lorem sit amet condimentum. In venenatis mauris nec lacus iaculis ultrices. Aliquam
+        eget velit diam. Maecenas eu viverra est. Praesent urna leo, faucibus ut posuere congue, suscipit eget odio.
+        Quisque id augue nulla. Nam vehicula pharetra accumsan. Class aptent taciti sociosqu ad litora torquent per
+        conubia nostra, per inceptos himenaeos. Sed a sagittis orci. Maecenas placerat non dolor quis consequat. Proin
+        efficitur purus non urna placerat auctor.
+
+        Donec mattis, odio vitae egestas sagittis, mauris lacus vestibulum diam, ac tempor diam lacus mollis erat.
+        Vestibulum scelerisque lacus nec lacus convallis efficitur. Nullam vel sapien gravida, ultrices lacus sit amet,
+        pharetra magna. Etiam tellus nibh, fermentum vitae sem vitae, condimentum commodo velit. Pellentesque auctor
+        elementum viverra. Interdum et malesuada fames ac ante ipsum primis in faucibus. Phasellus odio tellus,
+        malesuada a mauris et, lobortis cursus ex. Etiam purus nisl, auctor id pharetra nec, vestibulum non tellus.
+
+        Aliquam dictum risus ut suscipit pellentesque. Cras vel tristique elit. Quisque eget malesuada dolor, at
+        tincidunt massa. In sed ligula vitae velit vestibulum elementum. Pellentesque habitant morbi tristique senectus
+        et netus et malesuada fames ac turpis egestas. Pellentesque et sagittis sem. Praesent eu nulla mauris. Quisque
+        accumsan sagittis elit, id finibus metus rutrum ac. Quisque semper dapibus ex. Phasellus hendrerit odio sit amet
+        sollicitudin ullamcorper. Nam sit amet pellentesque orci. Cras facilisis risus non est aliquam, ut auctor sapien
+        ornare. Aenean orci ex, ornare non posuere sed, dapibus ut turpis. In a quam ut tellus ornare molestie in sit
+        amet massa. Nulla at justo interdum, consequat dolor at, varius dui.
+    </string>
+
+
+
+</resources>
