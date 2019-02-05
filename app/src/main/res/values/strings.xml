@@ -40,6 +40,10 @@
     <string name="fragment_login_google_btn_text">Google</string>
     <string name="fragment_login_twitter_btn_text">Twitter</string>
 
+    <string name="fragment_login_wrong_pass">wrong password!</string>
+    <string name="fragment_login_email_does_not_exist">email does not exist!</string>
+    <string name="fragment_login_too_many_unsuccessful_login">you have tried many unsuccessful login, try again later!</string>
+
     <!-- Register Fragment -->
 
     <string name="register_form_short_name">at least 6 characters</string>

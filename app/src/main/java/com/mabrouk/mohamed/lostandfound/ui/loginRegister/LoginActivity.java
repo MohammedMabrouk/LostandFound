@@ -7,11 +7,13 @@ import android.view.WindowManager;
 import com.mabrouk.mohamed.lostandfound.R;
 
 public class LoginActivity extends AppCompatActivity implements LoginFragment.OnRegisterButtonClickListener, RegisterFragment.OnLoginButtonClickListener {
-    private final static String TAG = LoginActivity.class.getSimpleName() + "TAG";
+    private final static String TAG = LoginActivity.class.getSimpleName() + "TAGG";
 
     private LoginFragment mLoginFragment;
     private RegisterFragment mRegisterFragment;
 
+//TODO: check for internet connectivity first
+//TODO: destroy after successful login
 
     @Override
     protected void onResume() {
@@ -57,7 +59,7 @@ public class LoginActivity extends AppCompatActivity implements LoginFragment.On
     private void showLoginFragment() {
         Log.v(TAG, "show login");
         getSupportFragmentManager().beginTransaction()
-              .setCustomAnimations(R.anim.fade_in, R.anim.fade_out)
+                .setCustomAnimations(R.anim.fade_in, R.anim.fade_out)
                 .replace(R.id.login_register_fragment_placeholder, mLoginFragment).commit();
     }
 

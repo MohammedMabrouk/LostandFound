@@ -5,7 +5,7 @@
     <dimen name="md_margin_small">8dp</dimen>
     <dimen name="md_padding8">8dp</dimen>
     <dimen name="md_padding4">4dp</dimen>
-    <item name="line_separator_height_small" type="dimen" format="float">1.5dp</item>
+    <dimen name="line_separator_height_small">1.5dp</dimen>
 
     <!-- Login Activity -->
     <dimen name="activity_login_container_width">280dp</dimen>

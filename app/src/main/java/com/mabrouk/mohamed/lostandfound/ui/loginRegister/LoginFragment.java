@@ -1,5 +1,6 @@
 package com.mabrouk.mohamed.lostandfound.ui.loginRegister;
 
+import android.app.Activity;
 import android.content.Context;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
@@ -10,26 +11,32 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ProgressBar;
 import android.widget.TextView;
 import com.mabrouk.mohamed.lostandfound.R;
 
 
-public class LoginFragment extends Fragment {
-    private final static String TAG = LoginFragment.class.getSimpleName() + "TAG";
+public class LoginFragment extends Fragment implements LoginRegisterContract.LoginView {
+    private final static String TAG = LoginFragment.class.getSimpleName() + "TAGG";
 
 
     OnRegisterButtonClickListener mCallBack;
     View root;
     EditText emailEditText, passwordEditText;
     Button loginButton, facebookButton, googleButton, twitterButton;
-    TextView signupTextView;
+    TextView signupTextView, loginErrorTextView;
+    ProgressBar loginPb;
+
+    private LoginRegisterContract.LoginPresenter mPresenter;
+
+    private Activity mActivity;
 
     public LoginFragment() {
         // Required empty public constructor
     }
 
 
-    public static LoginFragment newInstance(String param1, String param2) {
+    public static LoginFragment newInstance() {
         LoginFragment fragment = new LoginFragment();
         Bundle args = new Bundle();
 
@@ -41,6 +48,7 @@ public class LoginFragment extends Fragment {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
+        mActivity = getActivity();
     }
 
 
@@ -57,15 +65,23 @@ public class LoginFragment extends Fragment {
         googleButton = (Button) root.findViewById(R.id.google_login_btn);
         twitterButton = (Button) root.findViewById(R.id.twitter_login_btn);
         signupTextView = (TextView) root.findViewById(R.id.sign_up_tv);
+        loginPb = (ProgressBar) root.findViewById(R.id.login_pb);
+        loginErrorTextView = (TextView) root.findViewById(R.id.login_error_tv);
 
-
+        //init
+        mPresenter = new LoginPresenterImpl(this, mActivity);
 
 
         loginButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // TODO: validate login form
-                validate();
+                if (validate()) {
+                    mPresenter.onLoginButtonClick(
+                            emailEditText.getText().toString(),
+                            passwordEditText.getText().toString()
+                    );
+                }
+
             }
         });
 
@@ -80,8 +96,43 @@ public class LoginFragment extends Fragment {
         return root;
     }
 
+    // communicate with holder activity
     public void setOnRegisterButtonClickListener(OnRegisterButtonClickListener listener) {
         mCallBack = listener;
+    }
+
+    @Override
+    public void showProgress() {
+        loginPb.setVisibility(View.VISIBLE);
+        loginButton.setVisibility(View.GONE);
+    }
+
+    @Override
+    public void hideProgress() {
+        loginPb.setVisibility(View.GONE);
+        loginButton.setVisibility(View.VISIBLE);
+    }
+
+    @Override
+    public void setErrorMsg(String error) {
+        if (loginErrorTextView.getVisibility() == View.VISIBLE) {
+            loginErrorTextView.setText(error);
+        }
+    }
+
+    @Override
+    public void showErrorMsg() {
+        loginErrorTextView.setVisibility(View.VISIBLE);
+    }
+
+    @Override
+    public void hideErrorMsg() {
+        loginErrorTextView.setVisibility(View.GONE);
+    }
+
+    @Override
+    public void navigateToHome() {
+        Log.v(TAG, "Navigating to home...");
     }
 
     public interface OnRegisterButtonClickListener {
@@ -117,5 +168,11 @@ public class LoginFragment extends Fragment {
 
         return valid;
     }
+
+    @Override
+    public void onDestroyView() {
+        super.onDestroyView();
+    }
+
 
 }

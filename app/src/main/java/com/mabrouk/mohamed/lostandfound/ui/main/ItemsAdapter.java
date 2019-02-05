@@ -52,9 +52,9 @@ public class ItemsAdapter extends RecyclerView.Adapter<ItemsAdapter.MyViewHolder
         holder.itemPostDate.setText(item.getPostDateTime());
         holder.itemDescription.setText(item.getItemDescription());
 
-        // TODO: check for plural
+        /*
         holder.itemComments.setText(item.getNumOfComments()+" comments");
-        holder.itemFollowers.setText(item.getNumOfFollowers()+" follower");
+        holder.itemFollowers.setText(item.getNumOfFollowers()+" follower");*/
 
         //holder.author.setText(mContext.getResources().getString(R.string.author_str, article.getAuthor()));
 
@@ -73,7 +73,7 @@ public class ItemsAdapter extends RecyclerView.Adapter<ItemsAdapter.MyViewHolder
     }
 
     public class MyViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
-        public TextView itemName, itemLocation, itemPostDate, itemDescription, itemComments, itemFollowers;
+        public TextView itemName, itemLocation, itemPostDate, itemDescription, itemComments;
         public ImageView itemImg, saveItemImg;
 
         public MyViewHolder(View view) {
@@ -83,13 +83,12 @@ public class ItemsAdapter extends RecyclerView.Adapter<ItemsAdapter.MyViewHolder
             itemPostDate = (TextView) view.findViewById(R.id.item_post_date);
             itemDescription = (TextView) view.findViewById(R.id.item_description);
             itemComments = (TextView) view.findViewById(R.id.item_comments);
-            itemFollowers = (TextView) view.findViewById(R.id.item_followers);
+            //itemFollowers = (TextView) view.findViewById(R.id.item_followers);
 
             itemImg = (ImageView) view.findViewById(R.id.item_img);
             saveItemImg = (ImageView) view.findViewById(R.id.save_item_img);
 
             view.setOnClickListener(this);
-            //itemImg.setOnClickListener(this);
         }
 
         @Override
